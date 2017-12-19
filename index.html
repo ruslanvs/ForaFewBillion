@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // THIS IS A SIMLE VERSION
+        // var dailyreward = 0.01;
+        // var totalreward = 0.01;
+
+        // for (var i = 2; i <= 30; i++) {
+        //     dailyreward *= 2;
+        //     totalreward += dailyreward;
+        //     console.log ("day nr. " + i, dailyreward, totalreward)
+        // }
+        // END OF THE SIMPLE VERSION
+
+        function rewardcalc (dayonereward, multiplier, nrofdays) {
+
+            var dailyreward = dayonereward;
+            var totalreward = dayonereward;
+
+
+            for (var i=2; i<=nrofdays; i++) {
+                
+                dailyreward *= multiplier;
+                totalreward += dailyreward;
+                
+                console.log ("day " + i);
+                console.log ("Reward for that day " + dailyreward);
+                console.log ("Accumulated reward " + totalreward);
+
+            }
+
+        }
+        rewardcalc (0.01, 2, 30);
+
+    
+    
+    
+    </script>
+    
+</body>
+</html>

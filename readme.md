@@ -1,0 +1,1 @@
+Loops - The basics of JavaScript, educational assignment at Coding Dojo.
